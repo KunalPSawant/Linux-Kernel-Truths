@@ -1,6 +1,8 @@
 Linux Network Internals
 
-
+Linux Network driver comprises of PCI and Ethernet
+Pci is the bus driver
+Ethernet is the device driver
 Linux Network device driver creation can be divided into below parts
 
 -Initialization

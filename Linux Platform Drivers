@@ -1,0 +1,20 @@
+Linux Platform Drivers
+
+These are Linux I2C driver and Linux SPI driver
+
+
+I2C
+Multi master Bus
+Synchronous
+SCL
+SDA
+Pull up resistor
+400khz 1Mb/s speed
+7 bit,12bit slave address
+
+I2C algorithm
+I2C adapter
+I2C client
+I2C core
+
+I2C_probe->I2C_myprobe->

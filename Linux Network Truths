@@ -1,1 +1,32 @@
 Linux Network Internals
+
+
+Linux Network device driver creation can be divided into below parts
+
+-Initialization
+-Packet reception
+-Packet transmission
+-Status/Control
+-Uninitialisation
+
+
+Intialisation
+-Register the driver with the kernel
+-Register PCI driver with the kernel
+-Allocate memory for the packet alloc_ether
+-Initialise DMA,allocate coherant memory
+-Intialize Interrupt handler
+-Populate net_dev structure
+-On driver name match with the device tree, probe is invoked
+-In probe pci_is_enabled()
+
+Packet Reception
+-On packet arrival,rx interrupt is triggered
+-NAPI/interrupt enabled
+-Packets received queued into rx buffer queue to be passed to higher layers(TCP.IP)
+
+PAcket Transmission
+
+Status/Control
+
+Uninitialization

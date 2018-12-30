@@ -1,0 +1,27 @@
+
+
+Divided into Top half and Bottom half
+
+Bottom half further divided into
+Tasklets
+-Cannot sleep
+-Can be invoked
+-based on softirq
+Key APIs
+-Tasklet_init
+-Tasklet_Schedule
+-
+
+Soft IrQ
+11 types
+Timer,Net_Rx,Net_Tx,etc 
+
+Workqueues
+
+
+
+
+Key APIs
+
+request_irq
+free_irq

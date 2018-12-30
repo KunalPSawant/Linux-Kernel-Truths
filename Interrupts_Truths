@@ -30,9 +30,6 @@ Workqueues
 
 
 
-
-
-
 Key APIs
 
 request_irq-To register an IRQ handler

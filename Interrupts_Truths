@@ -3,25 +3,38 @@
 Divided into Top half and Bottom half
 
 Bottom half further divided into
+
 Tasklets
 -Cannot sleep
 -Can be invoked
 -based on softirq
+-Spinlocks can be used
+-Atomic
+-Interrupt context
+
+Macros
+DECLARE_TASKLET
+DECLARE_TASKLET_DISABLE
+
 Key APIs
--Tasklet_init
--Tasklet_Schedule
--
+-Tasklet_init Invoked inside probe
+-Tasklet_Schedule Invoked inside IRQ
 
 Soft IrQ
 11 types
 Timer,Net_Rx,Net_Tx,etc 
 
 Workqueues
+-Non atomic
+-Kernel Context
+
+
 
 
 
 
 Key APIs
 
-request_irq
+request_irq-To register an IRQ handler
 free_irq
+local_disable_irq-
